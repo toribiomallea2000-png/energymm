@@ -15,10 +15,10 @@ const CTASection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Content */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-            Ready to Transform Your Energy Future?
+            ¿Listo para Transformar tu Futuro Energético?
           </h2>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            Take the first step towards energy independence and significant cost savings. Our experts are ready to design the perfect renewable energy solution for your business.
+            Da el primer paso hacia la independencia energética y ahorros significativos. Nuestros expertos están listos para diseñar la solución de energía renovable perfecta para tu negocio.
           </p>
 
           {/* CTA Button */}
@@ -28,7 +28,7 @@ const CTASection = () => {
             className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 shadow-2xl shadow-primary/30"
           >
             <a href="mailto:info@mmgroup.energy">
-              Request a Consultation
+              Solicitar una Consulta
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
@@ -40,7 +40,7 @@ const CTASection = () => {
                 <Phone className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-primary-foreground/70">Call Us</p>
+                <p className="text-sm text-primary-foreground/70">Llámanos</p>
                 <p className="text-primary-foreground font-medium">+1 (555) 123-4567</p>
               </div>
             </div>
@@ -50,7 +50,7 @@ const CTASection = () => {
                 <Mail className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-primary-foreground/70">Email Us</p>
+                <p className="text-sm text-primary-foreground/70">Escríbenos</p>
                 <p className="text-primary-foreground font-medium">info@mmgroup.energy</p>
               </div>
             </div>
@@ -60,8 +60,8 @@ const CTASection = () => {
                 <MapPin className="w-5 h-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-primary-foreground/70">Visit Us</p>
-                <p className="text-primary-foreground font-medium">Global Headquarters</p>
+                <p className="text-sm text-primary-foreground/70">Visítanos</p>
+                <p className="text-primary-foreground font-medium">Oficinas Centrales</p>
               </div>
             </div>
           </div>

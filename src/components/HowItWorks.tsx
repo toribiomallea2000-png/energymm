@@ -4,20 +4,20 @@ const steps = [
   {
     number: "01",
     icon: ClipboardCheck,
-    title: "Energy Analysis",
-    description: "We conduct a comprehensive assessment of your current energy consumption, site conditions, and business requirements to identify the optimal solution.",
+    title: "Análisis Energético",
+    description: "Realizamos una evaluación integral de tu consumo energético actual, condiciones del sitio y requisitos del negocio para identificar la solución óptima.",
   },
   {
     number: "02",
     icon: PenTool,
-    title: "Custom System Design",
-    description: "Our engineers design a tailored renewable energy system that maximizes efficiency, meets your energy goals, and fits your budget.",
+    title: "Diseño Personalizado",
+    description: "Nuestros ingenieros diseñan un sistema de energía renovable a medida que maximiza la eficiencia, cumple tus objetivos energéticos y se ajusta a tu presupuesto.",
   },
   {
     number: "03",
     icon: Wrench,
-    title: "Installation & Commissioning",
-    description: "Our certified team handles the complete installation process, ensuring quality workmanship and seamless integration with your existing infrastructure.",
+    title: "Instalación y Puesta en Marcha",
+    description: "Nuestro equipo certificado se encarga del proceso completo de instalación, garantizando mano de obra de calidad e integración perfecta con tu infraestructura existente.",
   },
 ];
 
@@ -30,12 +30,12 @@ const HowItWorks = () => {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Our Process</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Nuestro Proceso</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-4">
-            How It Works
+            Cómo Funciona
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our streamlined process ensures a hassle-free transition to renewable energy, from initial consultation to system activation.
+            Nuestro proceso simplificado asegura una transición sin complicaciones a la energía renovable, desde la consulta inicial hasta la activación del sistema.
           </p>
         </div>
 

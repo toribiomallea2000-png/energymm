@@ -6,23 +6,23 @@ const Footer = () => {
 
   const links = {
     solutions: [
-      { label: "Solar Panels", href: "#solutions" },
-      { label: "Hybrid Systems", href: "#solutions" },
-      { label: "On-Grid Systems", href: "#solutions" },
-      { label: "Off-Grid Systems", href: "#solutions" },
-      { label: "Heat Pumps", href: "#solutions" },
+      { label: "Paneles Solares", href: "#solutions" },
+      { label: "Sistemas Híbridos", href: "#solutions" },
+      { label: "Sistemas On-Grid", href: "#solutions" },
+      { label: "Sistemas Off-Grid", href: "#solutions" },
+      { label: "Bombas de Calor", href: "#solutions" },
     ],
     company: [
-      { label: "About Us", href: "#" },
-      { label: "Our Team", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "News", href: "#" },
+      { label: "Sobre Nosotros", href: "#" },
+      { label: "Nuestro Equipo", href: "#" },
+      { label: "Carreras", href: "#" },
+      { label: "Noticias", href: "#" },
     ],
     support: [
-      { label: "Contact", href: "#contact" },
-      { label: "FAQ", href: "#" },
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Service", href: "#" },
+      { label: "Contacto", href: "#contact" },
+      { label: "Preguntas Frecuentes", href: "#" },
+      { label: "Política de Privacidad", href: "#" },
+      { label: "Términos de Servicio", href: "#" },
     ],
   };
 
@@ -36,27 +36,27 @@ const Footer = () => {
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/30 bg-background">
                 <img
                   src={logo}
-                  alt="MM Group Logo"
+                  alt="Logo MM Group"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
                 <span className="font-bold text-lg">MM Group</span>
-                <p className="text-xs text-primary-foreground/70">Renewable Energy</p>
+                <p className="text-xs text-primary-foreground/70">Energía Renovable</p>
               </div>
             </div>
             <p className="text-primary-foreground/70 max-w-sm mb-6 leading-relaxed">
-              Leading provider of renewable energy solutions for businesses, schools, farms, and industrial clients. Empowering a sustainable future through innovative technology.
+              Proveedor líder de soluciones de energía renovable para empresas, escuelas, clubes, granjas y clientes industriales. Impulsando un futuro sostenible a través de tecnología innovadora.
             </p>
             <div className="flex items-center gap-2 text-primary">
               <Leaf className="w-5 h-5" />
-              <span className="text-sm font-medium">Carbon Neutral Operations</span>
+              <span className="text-sm font-medium">Operaciones Carbono Neutral</span>
             </div>
           </div>
 
           {/* Solutions */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Solutions</h3>
+            <h3 className="font-semibold text-lg mb-4">Soluciones</h3>
             <ul className="space-y-3">
               {links.solutions.map((link) => (
                 <li key={link.label}>
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Company</h3>
+            <h3 className="font-semibold text-lg mb-4">Empresa</h3>
             <ul className="space-y-3">
               {links.company.map((link) => (
                 <li key={link.label}>
@@ -90,7 +90,7 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Support</h3>
+            <h3 className="font-semibold text-lg mb-4">Soporte</h3>
             <ul className="space-y-3">
               {links.support.map((link) => (
                 <li key={link.label}>
@@ -109,7 +109,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/60">
-            © {currentYear} MM Group. All rights reserved.
+            © {currentYear} MM Group. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm text-primary-foreground/60 hover:text-primary transition-colors">
