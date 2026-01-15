@@ -7,10 +7,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Solutions", href: "#solutions" },
-    { label: "Benefits", href: "#benefits" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Contact", href: "#contact" },
+    { label: "Soluciones", href: "#solutions" },
+    { label: "Beneficios", href: "#benefits" },
+    { label: "Cómo Funciona", href: "#how-it-works" },
+    { label: "Contacto", href: "#contact" },
   ];
 
   return (
@@ -22,13 +22,13 @@ const Header = () => {
             <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden border-2 border-primary/20 bg-background shadow-md">
               <img
                 src={logo}
-                alt="MM Group Logo"
+                alt="Logo MM Group"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="hidden sm:block">
               <span className="font-bold text-lg lg:text-xl text-foreground">MM Group</span>
-              <p className="text-xs text-muted-foreground">Renewable Energy</p>
+              <p className="text-xs text-muted-foreground">Energía Renovable</p>
             </div>
           </a>
 
@@ -48,7 +48,7 @@ const Header = () => {
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <a href="#contact">Get Free Assessment</a>
+              <a href="#contact">Evaluación Gratuita</a>
             </Button>
           </div>
 
@@ -56,7 +56,7 @@ const Header = () => {
           <button
             className="lg:hidden p-2 text-foreground"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label="Abrir menú"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -78,7 +78,7 @@ const Header = () => {
               ))}
               <Button asChild className="mt-2 bg-primary hover:bg-primary/90">
                 <a href="#contact" onClick={() => setIsMenuOpen(false)}>
-                  Get Free Assessment
+                  Evaluación Gratuita
                 </a>
               </Button>
             </nav>

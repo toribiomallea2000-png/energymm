@@ -3,27 +3,27 @@ import { TrendingDown, Shield, Leaf, PiggyBank, Check } from "lucide-react";
 const benefits = [
   {
     icon: TrendingDown,
-    title: "Lower Energy Costs",
-    description: "Reduce your electricity bills by up to 70% with our efficient renewable energy systems, delivering significant long-term savings.",
-    highlights: ["Immediate cost reduction", "Predictable energy expenses", "Protection from price volatility"],
+    title: "Menores Costos Energéticos",
+    description: "Reduce tus facturas de electricidad hasta un 70% con nuestros sistemas de energía renovable eficientes, generando ahorros significativos a largo plazo.",
+    highlights: ["Reducción inmediata de costos", "Gastos energéticos predecibles", "Protección contra volatilidad de precios"],
   },
   {
     icon: Shield,
-    title: "Energy Independence",
-    description: "Gain control over your energy supply with systems designed to minimize reliance on the grid and ensure operational continuity.",
-    highlights: ["Reduced grid dependency", "Backup power capability", "Business continuity"],
+    title: "Independencia Energética",
+    description: "Obtén control sobre tu suministro de energía con sistemas diseñados para minimizar la dependencia de la red y asegurar continuidad operativa.",
+    highlights: ["Menor dependencia de la red", "Capacidad de respaldo", "Continuidad del negocio"],
   },
   {
     icon: Leaf,
-    title: "Sustainable & Reliable",
-    description: "Invest in clean energy solutions that reduce your carbon footprint while providing dependable power for decades.",
-    highlights: ["Zero carbon emissions", "25+ year system lifespan", "Minimal maintenance"],
+    title: "Sostenible y Confiable",
+    description: "Invierte en soluciones de energía limpia que reducen tu huella de carbono mientras proporcionan energía confiable durante décadas.",
+    highlights: ["Cero emisiones de carbono", "Vida útil de 25+ años", "Mantenimiento mínimo"],
   },
   {
     icon: PiggyBank,
-    title: "Clear Return on Investment",
-    description: "Our systems are designed for rapid payback, with typical ROI achieved within 3-5 years and government incentives available.",
-    highlights: ["Fast payback period", "Government incentives", "Increased property value"],
+    title: "Retorno de Inversión Claro",
+    description: "Nuestros sistemas están diseñados para una recuperación rápida, con ROI típico alcanzado en 3-5 años e incentivos gubernamentales disponibles.",
+    highlights: ["Período de recuperación rápido", "Incentivos gubernamentales", "Mayor valor de la propiedad"],
   },
 ];
 
@@ -33,12 +33,12 @@ const Benefits = () => {
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Why Choose Us</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Por Qué Elegirnos</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-4">
-            The Benefits of Going Renewable
+            Los Beneficios de la Energía Renovable
           </h2>
           <p className="text-lg text-muted-foreground">
-            Discover why businesses across all sectors are making the switch to renewable energy with MM Group.
+            Descubre por qué empresas de todos los sectores están haciendo el cambio a energía renovable con MM Group.
           </p>
         </div>
 

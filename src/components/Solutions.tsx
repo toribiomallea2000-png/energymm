@@ -1,35 +1,36 @@
 import { Sun, Battery, Plug, PlugZap, Thermometer, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import solarHouse from "@/assets/solar-house.png";
 
 const solutions = [
   {
     icon: Sun,
-    title: "Solar Panels",
-    description: "High-efficiency photovoltaic systems designed for commercial and industrial applications with maximum energy yield.",
+    title: "Paneles Solares",
+    description: "Sistemas fotovoltaicos de alta eficiencia diseñados para aplicaciones comerciales e industriales con máximo rendimiento energético.",
     color: "bg-energy-green-light text-primary",
   },
   {
     icon: Battery,
-    title: "Hybrid Systems",
-    description: "Combined solar and storage solutions that ensure uninterrupted power supply and optimal energy management.",
+    title: "Sistemas Híbridos",
+    description: "Soluciones combinadas de energía solar y almacenamiento que garantizan suministro ininterrumpido y gestión óptima de la energía.",
     color: "bg-energy-blue-light text-secondary",
   },
   {
     icon: Plug,
-    title: "On-Grid Solar Systems",
-    description: "Grid-connected solar installations that reduce electricity bills while maintaining grid backup reliability.",
+    title: "Sistemas Solares On-Grid",
+    description: "Instalaciones solares conectadas a la red que reducen las facturas de electricidad manteniendo respaldo de la red.",
     color: "bg-accent text-accent-foreground",
   },
   {
     icon: PlugZap,
-    title: "Off-Grid Solar Systems",
-    description: "Complete energy independence with standalone solar systems for remote locations and facilities.",
+    title: "Sistemas Solares Off-Grid",
+    description: "Independencia energética total con sistemas solares autónomos para ubicaciones remotas e instalaciones aisladas.",
     color: "bg-energy-warm text-energy-teal",
   },
   {
     icon: Thermometer,
-    title: "Heat Pumps",
-    description: "Energy-efficient heating and cooling solutions that reduce operational costs and carbon footprint.",
+    title: "Bombas de Calor",
+    description: "Soluciones de calefacción y refrigeración eficientes que reducen costos operativos y huella de carbono.",
     color: "bg-energy-green-light text-primary",
   },
 ];
@@ -40,13 +41,22 @@ const Solutions = () => {
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Our Solutions</span>
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Nuestras Soluciones</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-4">
-            Comprehensive Energy Solutions
+            Soluciones Energéticas Integrales
           </h2>
           <p className="text-lg text-muted-foreground">
-            We offer a complete range of renewable energy systems tailored for businesses, schools, farms, and industrial facilities.
+            Ofrecemos una gama completa de sistemas de energía renovable adaptados para empresas, escuelas, clubes, granjas e instalaciones industriales.
           </p>
+        </div>
+
+        {/* Featured Image */}
+        <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
+          <img
+            src={solarHouse}
+            alt="Casa con paneles solares y sistema de energía renovable"
+            className="w-full h-64 md:h-80 object-cover"
+          />
         </div>
 
         {/* Solutions Grid */}
@@ -70,7 +80,7 @@ const Solutions = () => {
                   {solution.description}
                 </CardDescription>
                 <div className="mt-4 flex items-center text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-sm">Learn More</span>
+                  <span className="text-sm">Más Información</span>
                   <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                 </div>
               </CardContent>
@@ -87,7 +97,7 @@ const Solutions = () => {
             href="#contact"
             className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all"
           >
-            Explore All Solutions
+            Explorar Todas las Soluciones
             <ArrowRight className="w-5 h-5" />
           </a>
         </div>
