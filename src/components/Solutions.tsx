@@ -55,7 +55,7 @@ const Solutions = () => {
           <img
             src={solarHouse}
             alt="Casa con paneles solares y sistema de energía renovable"
-            className="w-full h-64 md:h-80 object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
 

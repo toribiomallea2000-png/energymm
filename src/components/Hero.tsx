@@ -26,12 +26,11 @@ const Hero = () => {
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
               Soluciones de{" "}
-              <span className="text-primary">Energía Renovable</span>{" "}
-              a la Medida de tu Negocio
+              <span className="text-primary">Energía Renovable</span>
             </h1>
 
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-xl mx-auto lg:mx-0">
-              Reduce tus costos energéticos hasta un 70% y logra independencia energética con nuestros sistemas solares y bombas de calor diseñados para empresas, escuelas, clubes, granjas y clientes industriales.
+              Reduce tus costos energéticos y logra independencia energética con nuestros sistemas solares y bombas de calor
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

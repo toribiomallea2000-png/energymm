@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/mm-group-logo.jpg";
+import logo from "@/assets/mm-energy-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +27,7 @@ const Header = () => {
               />
             </div>
             <div className="hidden sm:block">
-              <span className="font-bold text-lg lg:text-xl text-foreground">MM Group</span>
+              <span className="font-bold text-lg lg:text-xl text-foreground">MM Energy</span>
               <p className="text-xs text-muted-foreground">Energía Renovable</p>
             </div>
           </a>

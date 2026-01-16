@@ -29,7 +29,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="benefits" className="py-20 lg:py-28 bg-muted/50">
+    <section id="benefits" className="py-20 lg:py-28 bg-secondary/30">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -38,7 +38,7 @@ const Benefits = () => {
             Los Beneficios de la Energía Renovable
           </h2>
           <p className="text-lg text-muted-foreground">
-            Descubre por qué empresas de todos los sectores están haciendo el cambio a energía renovable con MM Group.
+            Descubre por qué empresas de todos los sectores están haciendo el cambio a energía renovable con MM Energy.
           </p>
         </div>
 
