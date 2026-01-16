@@ -16,9 +16,9 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-1 gap-12 items-center">
           {/* Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-center lg:col-span-2">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 border border-primary/30 mb-6">
               <Leaf className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-primary">Más de 500 empresas confían en nosotros</span>
@@ -29,11 +29,11 @@ const Hero = () => {
               <span className="text-primary">Energía Renovable</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-xl mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-xl mx-auto">
               Reduce tus costos energéticos y logra independencia energética con nuestros sistemas solares y bombas de calor
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 asChild
                 size="lg"
@@ -46,16 +46,15 @@ const Hero = () => {
               </Button>
               <Button
                 asChild
-                variant="outline"
                 size="lg"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6"
               >
                 <a href="#solutions">Ver Soluciones</a>
               </Button>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-primary-foreground/20">
+            <div className="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-primary-foreground/20 max-w-2xl mx-auto">
               <div>
                 <p className="text-3xl font-bold text-primary">500+</p>
                 <p className="text-sm text-primary-foreground/70">Proyectos Completados</p>
@@ -71,8 +70,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Empty space for image to show through */}
-          <div className="hidden lg:block" />
         </div>
       </div>
 
