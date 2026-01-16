@@ -19,11 +19,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden border-2 border-primary/20 bg-background shadow-md">
+            <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden border-2 border-primary/20 bg-background shadow-md flex items-center justify-center">
               <img
                 src={logo}
-                alt="Logo MM Group"
-                className="w-full h-full object-cover"
+                alt="Logo MM Energy"
+                className="w-[90%] h-[90%] object-contain"
               />
             </div>
             <div className="hidden sm:block">
