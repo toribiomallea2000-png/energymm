@@ -1,5 +1,5 @@
 import { Leaf } from "lucide-react";
-import logo from "@/assets/mm-group-logo.jpg";
+import logo from "@/assets/mm-energy-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <span className="font-bold text-lg">MM Group</span>
+                <span className="font-bold text-lg">MM Energy</span>
                 <p className="text-xs text-primary-foreground/70">Energía Renovable</p>
               </div>
             </div>
@@ -109,7 +109,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/60">
-            © {currentYear} MM Group. Todos los derechos reservados.
+            © {currentYear} MM Energy. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm text-primary-foreground/60 hover:text-primary transition-colors">
