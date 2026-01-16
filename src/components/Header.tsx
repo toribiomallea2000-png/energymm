@@ -22,8 +22,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
-            <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden border-2 border-primary/20 bg-background shadow-md">
-              <img alt="Logo MM Group" className="w-full h-full object-cover" src="/lovable-uploads/07623b86-a1b5-4ec9-bd32-0b3ce645c62c.png" />
+            <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full overflow-hidden border-2 border-primary/20 bg-background shadow-md flex items-center justify-center">
+              <img alt="Logo MM Energy" className="w-full h-full object-contain" src={logo} />
             </div>
             <div className="hidden sm:block">
               <span className="font-bold text-lg lg:text-xl text-foreground">MM Energy</span>
