@@ -1,6 +1,6 @@
 import { Sun, Battery, Plug, PlugZap, Thermometer, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import solarHouse from "@/assets/solar-house.png";
+import solarPanelsField from "@/assets/solar-panels-field.jpg";
 
 const solutions = [
   {
@@ -53,9 +53,9 @@ const Solutions = () => {
         {/* Featured Image */}
         <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
           <img
-            src={solarHouse}
-            alt="Casa con paneles solares y sistema de energía renovable"
-            className="w-full h-auto object-contain"
+            src={solarPanelsField}
+            alt="Campo de paneles solares para instalaciones comerciales e industriales"
+            className="w-full h-auto object-cover max-h-[500px]"
           />
         </div>
 
