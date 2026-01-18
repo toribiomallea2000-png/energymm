@@ -1,6 +1,24 @@
 import { Sun, Battery, Plug, PlugZap, Thermometer, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import solarHouse from "@/assets/solar-house.png";
 import solarPanelsField from "@/assets/solar-panels-field.jpg";
+import solarPanelsRoof from "@/assets/solar-panels-roof.jpg";
+
+const carouselImages = [
+  {
+    src: solarHouse,
+    alt: "Casa con paneles solares y sistema de energía renovable",
+  },
+  {
+    src: solarPanelsField,
+    alt: "Campo de paneles solares en instalación rural",
+  },
+  {
+    src: solarPanelsRoof,
+    alt: "Paneles solares en techo de edificio comercial",
+  },
+];
 
 const solutions = [
   {
@@ -50,13 +68,25 @@ const Solutions = () => {
           </p>
         </div>
 
-        {/* Featured Image */}
-        <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl">
-          <img
-            src={solarPanelsField}
-            alt="Campo de paneles solares para instalaciones comerciales e industriales"
-            className="w-full h-auto object-cover max-h-[500px]"
-          />
+        {/* Featured Image Carousel */}
+        <div className="mb-12 px-12">
+          <Carousel opts={{ loop: true }} className="w-full">
+            <CarouselContent>
+              {carouselImages.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-[400px] md:h-[500px] object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
         </div>
 
         {/* Solutions Grid */}
