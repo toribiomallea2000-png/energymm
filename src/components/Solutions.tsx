@@ -65,7 +65,7 @@ const Solutions = () => {
             Soluciones Energéticas Integrales
           </h2>
           <p className="text-lg text-muted-foreground">
-            Ofrecemos una gama completa de sistemas de energía renovable adaptados para empresas, colegios, clubes, campos e instalaciones industriales.
+            Desarrollamos soluciones energéticas integrales que se adaptan a cada necesidad, combinando eficiencia, ahorro y tecnología renovable para un consumo energético más inteligente.
           </p>
         </div>
 
