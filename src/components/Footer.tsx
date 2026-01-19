@@ -60,7 +60,7 @@ const Footer = () => {
                 <p className="text-xs text-primary-foreground/70">Energía Renovable</p>
               </div>
             </div>
-            <p className="text-primary-foreground/70 max-w-sm mb-6 leading-relaxed">Proveedor líder de soluciones de energía renovable para empresas, escuelas, clubes, granjas y clientes industriales. Impulsando un futuro sostenible a través de tecnología innovadora.</p>
+            <p className="text-primary-foreground/70 max-w-sm mb-6 leading-relaxed">Desarrollamos soluciones de energía renovable pensadas para quienes buscan eficiencia energética, ahorro a largo plazo y un impacto positivo en el medioambiente, utilizando tecnología moderna y confiable.</p>
             <div className="flex items-center gap-2 text-primary">
               <Leaf className="w-5 h-5" />
               <span className="text-sm font-medium">Operaciones Carbono Neutral</span>
