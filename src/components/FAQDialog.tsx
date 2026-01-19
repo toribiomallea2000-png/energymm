@@ -1,11 +1,22 @@
 import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const FAQ = () => {
+interface FAQDialogProps {
+  children: React.ReactNode;
+}
+
+const FAQDialog = ({ children }: FAQDialogProps) => {
   const faqs = [
     {
       question: "¿Qué es la energía solar fotovoltaica?",
@@ -35,38 +46,35 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-secondary">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+    <Dialog>
+      <DialogTrigger asChild>{children}</DialogTrigger>
+      <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle className="text-2xl font-bold text-foreground">
             Preguntas Frecuentes
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Resolvemos tus dudas sobre energía solar y nuestras soluciones renovables.
-          </p>
-        </div>
-
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="w-full space-y-4">
+          </DialogTitle>
+        </DialogHeader>
+        <div className="mt-4">
+          <Accordion type="single" collapsible className="w-full space-y-3">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-background rounded-lg px-6 border border-border"
+                className="bg-secondary rounded-lg px-4 border-none"
               >
-                <AccordionTrigger className="text-left font-medium text-foreground hover:text-primary">
+                <AccordionTrigger className="text-left font-medium text-foreground hover:text-primary text-sm">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed">
+                <AccordionContent className="text-muted-foreground leading-relaxed text-sm">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
         </div>
-      </div>
-    </section>
+      </DialogContent>
+    </Dialog>
   );
 };
 
-export default FAQ;
+export default FAQDialog;

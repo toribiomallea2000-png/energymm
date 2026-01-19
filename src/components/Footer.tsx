@@ -1,5 +1,7 @@
 import { Leaf } from "lucide-react";
 import logo from "@/assets/mm-energy-logo.png";
+import FAQDialog from "@/components/FAQDialog";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const links = {
@@ -95,11 +97,26 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Soporte</h3>
             <ul className="space-y-3">
-              {links.support.map(link => <li key={link.label}>
-                  <a href={link.href} className="text-primary-foreground/70 hover:text-primary transition-colors text-sm">
-                    {link.label}
-                  </a>
-                </li>)}
+              {links.support.map((link) =>
+                link.label === "Preguntas Frecuentes" ? (
+                  <li key={link.label}>
+                    <FAQDialog>
+                      <button className="text-primary-foreground/70 hover:text-primary transition-colors text-sm text-left">
+                        {link.label}
+                      </button>
+                    </FAQDialog>
+                  </li>
+                ) : (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </div>
