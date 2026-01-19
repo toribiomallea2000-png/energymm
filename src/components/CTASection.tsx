@@ -41,7 +41,7 @@ const CTASection = () => {
               </div>
               <div>
                 <p className="text-sm text-primary-foreground/70">Llámanos</p>
-                <p className="text-primary-foreground font-medium">+1 (555) 123-4567</p>
+                <p className="text-primary-foreground font-medium">+54 9 11 3042 1031</p>
               </div>
             </div>
 
