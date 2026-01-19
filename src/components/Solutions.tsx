@@ -1,6 +1,7 @@
 import { Sun, Battery, Plug, PlugZap, Thermometer, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import solarHouse from "@/assets/solar-house.png";
 import solarPanelsField from "@/assets/solar-panels-field.jpg";
 import solarPanelsRoof from "@/assets/solar-panels-roof.jpg";
@@ -70,7 +71,11 @@ const Solutions = () => {
 
         {/* Featured Image Carousel */}
         <div className="mb-12 px-12">
-          <Carousel opts={{ loop: true }} className="w-full">
+          <Carousel 
+            opts={{ loop: true }} 
+            plugins={[Autoplay({ delay: 4000, stopOnInteraction: false })]}
+            className="w-full"
+          >
             <CarouselContent>
               {carouselImages.map((image, index) => (
                 <CarouselItem key={index}>
