@@ -1,53 +1,66 @@
 import { Leaf } from "lucide-react";
 import logo from "@/assets/mm-energy-logo.png";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   const links = {
-    solutions: [
-      { label: "Paneles Solares", href: "#solutions" },
-      { label: "Sistemas Híbridos", href: "#solutions" },
-      { label: "Sistemas On-Grid", href: "#solutions" },
-      { label: "Sistemas Off-Grid", href: "#solutions" },
-      { label: "Bombas de Calor", href: "#solutions" },
-    ],
-    company: [
-      { label: "Sobre Nosotros", href: "#" },
-      { label: "Nuestro Equipo", href: "#" },
-      { label: "Carreras", href: "#" },
-      { label: "Noticias", href: "#" },
-    ],
-    support: [
-      { label: "Contacto", href: "#contact" },
-      { label: "Preguntas Frecuentes", href: "#" },
-      { label: "Política de Privacidad", href: "#" },
-      { label: "Términos de Servicio", href: "#" },
-    ],
+    solutions: [{
+      label: "Paneles Solares",
+      href: "#solutions"
+    }, {
+      label: "Sistemas Híbridos",
+      href: "#solutions"
+    }, {
+      label: "Sistemas On-Grid",
+      href: "#solutions"
+    }, {
+      label: "Sistemas Off-Grid",
+      href: "#solutions"
+    }, {
+      label: "Bombas de Calor",
+      href: "#solutions"
+    }],
+    company: [{
+      label: "Sobre Nosotros",
+      href: "#"
+    }, {
+      label: "Nuestro Equipo",
+      href: "#"
+    }, {
+      label: "Carreras",
+      href: "#"
+    }, {
+      label: "Noticias",
+      href: "#"
+    }],
+    support: [{
+      label: "Contacto",
+      href: "#contact"
+    }, {
+      label: "Preguntas Frecuentes",
+      href: "#"
+    }, {
+      label: "Política de Privacidad",
+      href: "#"
+    }, {
+      label: "Términos de Servicio",
+      href: "#"
+    }]
   };
-
-  return (
-    <footer className="bg-energy-dark text-primary-foreground">
+  return <footer className="bg-energy-dark text-primary-foreground">
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/30 bg-background">
-                <img
-                  src={logo}
-                  alt="Logo MM Group"
-                  className="w-full h-full object-cover"
-                />
+                <img src={logo} alt="Logo MM Group" className="w-full h-full object-cover" />
               </div>
               <div>
                 <span className="font-bold text-lg">MM Energy</span>
                 <p className="text-xs text-primary-foreground/70">Energía Renovable</p>
               </div>
             </div>
-            <p className="text-primary-foreground/70 max-w-sm mb-6 leading-relaxed">
-              Proveedor líder de soluciones de energía renovable para empresas, escuelas, clubes, granjas y clientes industriales. Impulsando un futuro sostenible a través de tecnología innovadora.
-            </p>
+            <p className="text-primary-foreground/70 max-w-sm mb-6 leading-relaxed">Proveedor líder de soluciones de energía renovable para empresas, escuelas, clubes, granjas y clientes industriales. Impulsando un futuro sostenible a través de tecnología innovadora.</p>
             <div className="flex items-center gap-2 text-primary">
               <Leaf className="w-5 h-5" />
               <span className="text-sm font-medium">Operaciones Carbono Neutral</span>
@@ -58,16 +71,11 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Soluciones</h3>
             <ul className="space-y-3">
-              {links.solutions.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
-                  >
+              {links.solutions.map(link => <li key={link.label}>
+                  <a href={link.href} className="text-primary-foreground/70 hover:text-primary transition-colors text-sm">
                     {link.label}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -75,16 +83,11 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Empresa</h3>
             <ul className="space-y-3">
-              {links.company.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
-                  >
+              {links.company.map(link => <li key={link.label}>
+                  <a href={link.href} className="text-primary-foreground/70 hover:text-primary transition-colors text-sm">
                     {link.label}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -92,16 +95,11 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Soporte</h3>
             <ul className="space-y-3">
-              {links.support.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
-                  >
+              {links.support.map(link => <li key={link.label}>
+                  <a href={link.href} className="text-primary-foreground/70 hover:text-primary transition-colors text-sm">
                     {link.label}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
         </div>
@@ -124,8 +122,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
