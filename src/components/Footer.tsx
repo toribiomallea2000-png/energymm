@@ -37,7 +37,7 @@ const Footer = () => {
       href: "#contact"
     }, {
       label: "Preguntas Frecuentes",
-      href: "#"
+      href: "#faq"
     }, {
       label: "Política de Privacidad",
       href: "#"
