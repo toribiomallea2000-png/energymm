@@ -1,4 +1,4 @@
-import { Sun, Zap, Battery } from "lucide-react";
+import { Sun, Zap, Battery, Thermometer } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
@@ -20,6 +20,9 @@ import inversorGrowattGrande from "@/assets/products/inversor-growatt-grande.jpg
 // Bateria images
 import bateriaGrowatt1 from "@/assets/products/bateria-growatt-1.jpg";
 import bateriaGrowatt2 from "@/assets/products/bateria-growatt-2.jpg";
+
+// Bomba de calor images
+import bombaCalor1 from "@/assets/products/bomba-calor-1.webp";
 
 const products = [
   {
@@ -58,6 +61,17 @@ const products = [
     ],
     color: "text-primary",
     bgColor: "bg-primary/10",
+  },
+  {
+    title: "Bomba de Calor",
+    description:
+      "Disfrutá tu pileta a la temperatura ideal todo el año. La bomba de calor aprovecha la energía del aire para climatizar el agua de forma eficiente y sustentable, reduciendo el consumo eléctrico y extendiendo la temporada de uso con mayor confort.",
+    icon: Thermometer,
+    images: [
+      { src: bombaCalor1, alt: "Bomba de Calor ASUA" },
+    ],
+    color: "text-energy-primary",
+    bgColor: "bg-energy-primary/10",
   },
 ];
 
