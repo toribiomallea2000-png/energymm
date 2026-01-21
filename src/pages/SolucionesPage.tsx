@@ -1,19 +1,15 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Benefits from "@/components/Benefits";
-import HowItWorks from "@/components/HowItWorks";
-import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Solutions from "@/components/Solutions";
+import CTASection from "@/components/CTASection";
 
-const Index = () => {
+const SolucionesPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main>
-        <Hero />
-        <Benefits />
-        <HowItWorks />
+      <main className="pt-16 lg:pt-20">
+        <Solutions />
         <CTASection />
       </main>
       <Footer />
@@ -22,4 +18,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default SolucionesPage;
