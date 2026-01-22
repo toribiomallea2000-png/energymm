@@ -12,13 +12,13 @@ const Header = () => {
   const navLinks = [
     {
       label: "Soluciones",
-      href: "/soluciones",
-      isRoute: true,
+      href: isHomePage ? "#solutions" : "/#solutions",
+      isRoute: false,
     },
     {
       label: "Productos",
-      href: "/productos",
-      isRoute: true,
+      href: isHomePage ? "#products" : "/#products",
+      isRoute: false,
     },
     {
       label: "Beneficios",
@@ -32,8 +32,8 @@ const Header = () => {
     },
     {
       label: "Contacto",
-      href: isHomePage ? "#contact" : "/#contact",
-      isRoute: false,
+      href: "/contacto",
+      isRoute: true,
     },
   ];
   return <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
@@ -76,7 +76,7 @@ const Header = () => {
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <a href="#contact">Evaluación Gratuita</a>
+              <Link to="/contacto">Evaluación Gratuita</Link>
             </Button>
           </div>
 
@@ -112,9 +112,9 @@ const Header = () => {
                 )
               )}
               <Button asChild className="mt-2 bg-primary hover:bg-primary/90">
-                <a href={isHomePage ? "#contact" : "/#contact"} onClick={() => setIsMenuOpen(false)}>
+                <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>
                   Evaluación Gratuita
-                </a>
+                </Link>
               </Button>
             </nav>
           </div>
