@@ -1,16 +1,14 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import Solutions from "@/components/Solutions";
-import CTASection from "@/components/CTASection";
+import ContactForm from "@/components/ContactForm";
 
-const SolucionesPage = () => {
+const ContactoPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-16 lg:pt-20">
-        <Solutions />
-        <CTASection />
+        <ContactForm />
       </main>
       <Footer />
       <WhatsAppButton />
@@ -18,4 +16,4 @@ const SolucionesPage = () => {
   );
 };
 
-export default SolucionesPage;
+export default ContactoPage;
