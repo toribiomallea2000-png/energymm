@@ -65,7 +65,7 @@ const FAQDialog = ({ children }: FAQDialogProps) => {
                 <AccordionTrigger className="text-left font-medium text-foreground hover:text-primary text-sm">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed text-sm">
+                <AccordionContent className="text-foreground leading-relaxed text-sm">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
