@@ -24,6 +24,9 @@ import bateriaGrowatt2 from "@/assets/products/bateria-growatt-2.jpg";
 // Bomba de calor images
 import bombaCalor1 from "@/assets/products/bomba-calor-1.webp";
 
+// Bomba solar sumergible images
+import bombaSumergible1 from "@/assets/products/bomba-solar-sumergible.jpg";
+
 const products = [
   {
     title: "Paneles Solares",
@@ -72,6 +75,17 @@ const products = [
     ],
     color: "text-energy-primary",
     bgColor: "bg-energy-primary/10",
+  },
+  {
+    title: "Bomba Solar Sumergible",
+    description:
+      "Extraé agua de pozos profundos utilizando energía solar directa. Ideal para zonas rurales, campos y lugares sin acceso a la red eléctrica. Funcionamiento autónomo, bajo mantenimiento y máxima eficiencia energética.",
+    icon: Sun,
+    images: [
+      { src: bombaSumergible1, alt: "Bomba Solar Sumergible" },
+    ],
+    color: "text-energy-secondary",
+    bgColor: "bg-energy-secondary/10",
   },
 ];
 
