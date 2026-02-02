@@ -1,85 +1,64 @@
-import { ClipboardCheck, PenTool, Wrench, ArrowRight } from "lucide-react";
+import { ClipboardCheck, PenTool, Wrench } from "lucide-react";
 
 const steps = [
   {
     number: "01",
     icon: ClipboardCheck,
-    title: "Análisis Energético",
-    description: "Realizamos una evaluación integral de tu consumo energético actual, condiciones del sitio y requisitos del negocio para identificar la solución óptima.",
+    title: "Análisis",
+    description: "Evaluación integral de tu consumo energético actual",
   },
   {
     number: "02",
     icon: PenTool,
-    title: "Diseño Personalizado",
-    description: "Nuestros ingenieros diseñan un sistema de energía renovable a medida que maximiza la eficiencia, cumple tus objetivos energéticos y se ajusta a tu presupuesto.",
+    title: "Diseño",
+    description: "Sistema a medida que maximiza eficiencia y ahorro",
   },
   {
     number: "03",
     icon: Wrench,
-    title: "Instalación y Puesta en Marcha",
-    description: "Nuestro equipo certificado se encarga del proceso completo de instalación, garantizando mano de obra de calidad e integración perfecta con tu infraestructura existente.",
+    title: "Instalación",
+    description: "Equipo certificado con integración perfecta",
   },
 ];
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-20 lg:py-28 bg-muted relative overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-primary/5 to-transparent pointer-events-none" />
-
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Nuestro Proceso</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-4">
-            Cómo Funciona
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Nuestro proceso simplificado asegura una transición sin complicaciones a la energía renovable, desde la consulta inicial hasta la activación del sistema.
-          </p>
-        </div>
-
-        {/* Steps */}
-        <div className="relative">
-          {/* Connection Line - Desktop */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-border -translate-y-1/2" style={{ left: "16.66%", right: "16.66%" }}>
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary to-primary/0" />
+    <section id="how-it-works" className="py-12 lg:py-16 bg-muted">
+      <div className="container mx-auto px-4 lg:px-8">
+        {/* Horizontal Layout */}
+        <div className="flex flex-col lg:flex-row lg:items-center gap-8">
+          {/* Left - Header */}
+          <div className="lg:w-1/4">
+            <span className="text-sm font-semibold text-primary uppercase tracking-wider">Nuestro Proceso</span>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-2">
+              Cómo Funciona
+            </h2>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+          {/* Right - Steps in a row */}
+          <div className="lg:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-4">
             {steps.map((step, index) => (
               <div
                 key={step.title}
-                className="relative text-center"
+                className="relative flex items-start gap-4 p-5 rounded-xl bg-card border border-border hover:border-primary/50 hover:shadow-lg transition-all"
               >
-                {/* Step Card */}
-                <div className="bg-card border border-border rounded-2xl p-8 hover:border-primary/50 hover:shadow-xl transition-all duration-300">
-                  {/* Number Badge */}
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                    <span className="inline-block px-4 py-1 bg-primary text-primary-foreground text-sm font-bold rounded-full">
-                      {step.number}
-                    </span>
-                  </div>
+                {/* Number */}
+                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-primary-foreground text-sm font-bold flex items-center justify-center">
+                  {step.number}
+                </span>
 
-                  {/* Icon */}
-                  <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-                    <step.icon className="w-10 h-10 text-primary" />
+                {/* Content */}
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <step.icon className="w-4 h-4 text-primary" />
+                    <h3 className="font-semibold text-foreground">{step.title}</h3>
                   </div>
-
-                  {/* Content */}
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {step.description}
-                  </p>
+                  <p className="text-sm text-muted-foreground">{step.description}</p>
                 </div>
 
-                {/* Arrow - Mobile */}
+                {/* Arrow connector for desktop */}
                 {index < steps.length - 1 && (
-                  <div className="lg:hidden flex justify-center my-4">
-                    <ArrowRight className="w-6 h-6 text-primary rotate-90" />
-                  </div>
+                  <div className="hidden md:block absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 border-t-2 border-r-2 border-primary/30 rotate-45 z-10" />
                 )}
               </div>
             ))}
