@@ -4,11 +4,13 @@ import Autoplay from "embla-carousel-autoplay";
 import solarHouse from "@/assets/solar-house.png";
 import solarPanelsField from "@/assets/solar-panels-field.jpg";
 import solarPanelsRoof from "@/assets/solar-panels-roof.jpg";
+import solarPump from "@/assets/solar-pump.jpg";
 
 const carouselImages = [
   { src: solarHouse, alt: "Casa con paneles solares" },
   { src: solarPanelsField, alt: "Campo de paneles solares" },
   { src: solarPanelsRoof, alt: "Paneles solares en techo" },
+  { src: solarPump, alt: "Bomba solar de riego" },
 ];
 
 const solutions = [
