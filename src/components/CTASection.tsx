@@ -1,9 +1,7 @@
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const CTASection = () => {
-  return (
-    <section id="contact" className="py-12 lg:py-16 relative overflow-hidden">
+  return <section id="contact" className="py-12 lg:py-16 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-energy-dark via-energy-dark to-primary/40" />
       
@@ -18,11 +16,7 @@ const CTASection = () => {
             <p className="text-primary-foreground/80 mb-6">
               Da el primer paso hacia la independencia energética y ahorros significativos.
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl shadow-primary/30"
-            >
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl shadow-primary/30">
               <a href="mailto:info@mmgroup.energy">
                 Solicitar Consulta
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -38,7 +32,8 @@ const CTASection = () => {
               </div>
               <div>
                 <p className="text-xs text-primary-foreground/70">Llámanos</p>
-                <p className="text-primary-foreground font-medium text-sm">+54 9 11 3042 1031</p>
+                <p className="text-primary-foreground font-medium text-sm">+54 9 11 3042 1031 
++54 9 11 6709-8196</p>
               </div>
             </div>
 
@@ -48,7 +43,7 @@ const CTASection = () => {
               </div>
               <div>
                 <p className="text-xs text-primary-foreground/70">Escríbenos</p>
-                <p className="text-primary-foreground font-medium text-sm">info@mmgroup.energy</p>
+                <p className="text-primary-foreground font-medium text-sm">info@mmenergiasolar.com</p>
               </div>
             </div>
 
@@ -58,14 +53,12 @@ const CTASection = () => {
               </div>
               <div>
                 <p className="text-xs text-primary-foreground/70">Visítanos</p>
-                <p className="text-primary-foreground font-medium text-sm">Oficinas Centrales</p>
+                <p className="text-primary-foreground font-medium text-sm">Buenos aires, Argentina.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTASection;
