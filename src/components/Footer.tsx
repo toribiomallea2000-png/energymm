@@ -20,6 +20,9 @@ const Footer = () => {
     }, {
       label: "Bombas de Calor",
       href: "#solutions"
+    }, {
+      label: "Bombas Solar Sumergible",
+      href: "#solutions"
     }],
     company: [{
       label: "Sobre Nosotros",
