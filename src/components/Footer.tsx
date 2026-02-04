@@ -129,7 +129,7 @@ const Footer = () => {
           <p className="text-sm text-primary-foreground/60">
             © {currentYear} MM Energy. Todos los derechos reservados.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 mr-20">
             <a href="https://www.instagram.com/mmenergy.solar/" target="_blank" rel="noopener noreferrer" className="text-sm text-primary-foreground/60 hover:text-primary transition-colors">
               Instagram
             </a>
