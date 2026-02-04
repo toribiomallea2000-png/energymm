@@ -47,8 +47,7 @@ const Hero = () => {
               <Button
                 asChild
                 size="lg"
-                variant="outline"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground"
               >
                 <a href="#solutions">Ver Soluciones</a>
               </Button>
@@ -58,15 +57,15 @@ const Hero = () => {
           {/* Stats - Right Side */}
           <div className="grid grid-cols-3 gap-4 lg:pl-12">
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 text-center border border-primary-foreground/20">
-              <p className="text-2xl lg:text-3xl font-bold text-primary">500+</p>
+              <p className="text-2xl lg:text-3xl font-bold text-primary-foreground">+25</p>
               <p className="text-xs text-primary-foreground/70">Proyectos</p>
             </div>
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 text-center border border-primary-foreground/20">
-              <p className="text-2xl lg:text-3xl font-bold text-primary">70%</p>
+              <p className="text-2xl lg:text-3xl font-bold text-primary-foreground">70%</p>
               <p className="text-xs text-primary-foreground/70">Ahorro</p>
             </div>
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 text-center border border-primary-foreground/20">
-              <p className="text-2xl lg:text-3xl font-bold text-primary">25+</p>
+              <p className="text-2xl lg:text-3xl font-bold text-primary-foreground">10</p>
               <p className="text-xs text-primary-foreground/70">Años Exp.</p>
             </div>
           </div>
